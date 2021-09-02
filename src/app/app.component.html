@@ -24,6 +24,12 @@
 </mat-form-field>
 </div>
 
-<div>
+<br><br>
+
+<countdown #countdown [config]="{leftTime: 60, demand: true}"></countdown>
+<br><br>
+<button (click)="countdown.resume()">Start the game</button>
+<br><br>
+<button (click)="next()">Next</button>
+
 <button mat-raised-button>Play</button>
-</div>
